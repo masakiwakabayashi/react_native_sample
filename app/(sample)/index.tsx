@@ -4,15 +4,15 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const CounterScreen: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
-  const handlePress = () => {
+  const handleIncrement = () => {
     setCount(prev => prev + 1);
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>カウンター画面</Text>
+      <Text style={styles.title}>React Native カウンター</Text>
       <Text style={styles.count}>{count}</Text>
-      <Button title="カウントアップ" onPress={handlePress} />
+      <Button title="カウントアップ" onPress={handleIncrement} />
     </View>
   );
 };
@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 16,
+    padding: 24,
+    backgroundColor: '#f5f5f5',
   },
   title: {
     fontSize: 24,
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
   },
   count: {
     fontSize: 48,
-    marginBottom: 24,
     fontWeight: 'bold',
+    marginBottom: 24,
   },
 });
