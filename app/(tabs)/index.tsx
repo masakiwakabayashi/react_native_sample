@@ -52,7 +52,7 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <Link href="/(sample)" asChild>
+        <Link href="/sample" asChild>
           <ThemedText type="link">サンプルページへ</ThemedText>
         </Link>
       </ThemedView>
