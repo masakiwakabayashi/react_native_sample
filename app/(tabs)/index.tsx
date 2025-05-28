@@ -55,6 +55,9 @@ export default function HomeScreen() {
         <Link href="/sample" asChild>
           <ThemedText type="link">サンプルページへ</ThemedText>
         </Link>
+        <Link href="/sample/video" asChild>
+          <ThemedText type="link">ビデオページへ</ThemedText>
+        </Link>
       </ThemedView>
     </ParallaxScrollView>
   );
