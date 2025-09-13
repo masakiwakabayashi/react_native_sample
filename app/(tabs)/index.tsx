@@ -58,6 +58,9 @@ export default function HomeScreen() {
         <Link href="/sample/video" asChild>
           <ThemedText type="link">ビデオページへ</ThemedText>
         </Link>
+        <Link href="/events" asChild>
+          <ThemedText type="link">イベント一覧ページへ</ThemedText>
+        </Link>
       </ThemedView>
     </ParallaxScrollView>
   );
